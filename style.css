@@ -1,0 +1,108 @@
+/* Menggunakan font Poppins untuk header dan Roboto untuk konten */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #1a1a2e; /* Navy gelap */
+  color: #eaeaea; /* Warna teks terang */
+}
+
+/* Header Gradient */
+header {
+  background: linear-gradient(to right, #0f3460, #16213e);
+  padding: 80px 0;
+  border-bottom: 2px solid #0f3460;
+}
+
+/* Animasi Fade-In */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Kartu */
+.card {
+  background-color: #16213e; /* Warna gelap untuk kartu */
+  border: none;
+  color: #eaeaea;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Animasi Scale-Up */
+.scale-up {
+  animation: scaleUp 1.5s ease;
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Tombol */
+.btn-outline-light {
+  border-color: #eaeaea;
+  color: #eaeaea;
+}
+
+.btn-outline-light:hover {
+  background-color: #eaeaea;
+  color: #16213e;
+}
+
+/* Modal */
+.modal-content {
+  border-radius: 10px;
+}
+
+/* Contact Button */
+.btn-primary {
+  background-color: #0f3460;
+  border-color: #0f3460;
+}
+
+.btn-primary:hover {
+  background-color: #16213e;
+  border-color: #16213e;
+}
+
+/* Gambar Langkah-Langkah */
+.step-image {
+  width: 100%;
+  max-width: 500px;
+  margin: 10px auto;
+  border-radius: 8px;
+}
+
+/* Typography for Card Titles */
+.card-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+
+/* Footer Styling */
+footer {
+  background: linear-gradient(to right, #0f3460, #16213e);
+  border-top: 2px solid #0f3460;
+}
+
+/* Contact Section */
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+}
